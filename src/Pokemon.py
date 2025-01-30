@@ -14,7 +14,8 @@
 import random 
 
 class Pokemon:
-     def __init__(self, name, type, hp, attack, defense, moves):
+     def __init__(self, name: str, type: str, hp: int, attack: int, defense: int, moves: list):
+          # Data types in order: string, string, int, int, int, list? We should ignore height and weight
           self.name = name
           self.type = type
           self.hp = hp
@@ -22,4 +23,7 @@ class Pokemon:
           self.defense = defense
           self.moves = moves
             
+     # Make two instances for pokemon for each team. 
+
+     #
 
