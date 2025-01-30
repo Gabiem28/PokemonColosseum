@@ -23,7 +23,7 @@ class Pokemon:
           self.defense = defense
           self.moves = moves
             
-     # Make two instances for pokemon for each team. 
-
-     #
+     # Test
+     # def __repr__(self):
+     #     return f"Pokemon({self.name}, {self.type}, {self.hp}, {self.attack}, {self.defense}, {self.moves})"
 
