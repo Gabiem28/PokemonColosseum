@@ -27,3 +27,18 @@ class Pokemon:
      # def __repr__(self):
      #     return f"Pokemon({self.name}, {self.type}, {self.hp}, {self.attack}, {self.defense}, {self.moves})"
 
+     ###########################################################
+     def take_damage(self, damage):
+          self.hp -= damage
+          if self.hp < 0:
+               self.hp = 0
+
+     
+     def is_fainted(self):
+          return self.hp <= 0
+     
+     def __str__(self):
+          return f"{self.name} (Type: {self.type}, HP: {self.hp})"
+     
+     
+
