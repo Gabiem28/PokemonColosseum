@@ -13,6 +13,7 @@
 
 import random 
 
+
 class Pokemon:
      def __init__(self, name: str, type: str, hp: int, attack: int, defense: int, moves: list):
           # Data types in order: string, string, int, int, int, list? We should ignore height and weight
@@ -22,23 +23,27 @@ class Pokemon:
           self.attack = attack
           self.defense = defense
           self.moves = moves
+          self.used_moves = []
             
      # Test
      # def __repr__(self):
      #     return f"Pokemon({self.name}, {self.type}, {self.hp}, {self.attack}, {self.defense}, {self.moves})"
 
      ###########################################################
+
+     # Once damage reaches below 0, set automatically to 0 to not worry about negatives
      def take_damage(self, damage):
           self.hp -= damage
           if self.hp < 0:
                self.hp = 0
 
-     
+     # For handling when pokemon is fainted
      def is_fainted(self):
           return self.hp <= 0
      
+     # String that only returns pokemon name
      def __str__(self):
-          return f"{self.name} (Type: {self.type}, HP: {self.hp})"
+          return self.name
      
      
 
