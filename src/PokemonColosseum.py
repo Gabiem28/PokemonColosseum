@@ -81,6 +81,8 @@ def calc_damage(move, attacker, defender, moves_data):
 
 # Function for the calculations
 
+# Test edit
+
 
 def main():
     # Start loading the files
